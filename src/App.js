@@ -11,6 +11,7 @@ function App() {
         <div>
             <h1>Counter: {counter}</h1>
             <button onClick={() => dispatch(increment())}>+</button>
+            <button onClick={() => dispatch(increment(5))}>+5</button>
             <button onClick={() => dispatch(decrement())}>-</button>
             <button onClick={() => dispatch(SIGN_IN())}>LOGIN</button>
             {loggedIn && (<div>Hello User!</div>)}
