@@ -3,6 +3,24 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import {createStore} from "redux";
+
+
+// STORE -> globalized state
+
+
+
+// ACTION -> WHAT TO DO
+
+
+
+// REDUCER -> HOW ACTIONS TRANSFORM STATE
+// BASED ON ACTION REDUCER TRANSFORM STATE
+
+
+// DISPATCH
+
+
 
 ReactDOM.render(
   <React.StrictMode>
