@@ -3,8 +3,8 @@ import counterReducer from "./counter";
 import loggedReducer from "./isLogged";
 
 const rootReducer = combineReducers(({
-    counterReducer,
-    loggedReducer
+    counter: counterReducer,
+    loggedIn: loggedReducer
 }))
 
 export default rootReducer
