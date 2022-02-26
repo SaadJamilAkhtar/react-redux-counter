@@ -3,30 +3,19 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import {createStore} from "redux";
+import {createStore, combineReducers} from "redux";
+import rootReducer from "./reducers";
 
-
-// STORE -> globalized state
-
-
-
-// ACTION -> WHAT TO DO
-
-
-
-// REDUCER -> HOW ACTIONS TRANSFORM STATE
-// BASED ON ACTION REDUCER TRANSFORM STATE
-
-
-// DISPATCH
-
-
+const store = createStore(
+    rootReducer,
+    window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+);
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+    <React.StrictMode>
+        <App/>
+    </React.StrictMode>,
+    document.getElementById('root')
 );
 
 // If you want to start measuring performance in your app, pass a function
